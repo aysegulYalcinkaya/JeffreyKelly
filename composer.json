@@ -1,0 +1,22 @@
+{
+  "require": {
+    "jakoch/phantomjs-installer": "^3"
+  },
+  "extra": {
+    "jakoch/phantomjs-installer": {
+      "cdnurl": "https://npm.taobao.org/mirrors/phantomjs/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "PhantomInstaller\\Installer::installPhantomJS"
+    ],
+    "post-update-cmd": [
+      "PhantomInstaller\\Installer::installPhantomJS"
+    ]
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+
+}
